@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>PINK</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/logotype-white-mobile.svg" width="75" height="22" alt="Приложение «PINK»">
+        </a>
+
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a>Главная</a>
+                    </li>
+                    <li class="site-list__item site-list__item--active">
+                        <a href="photo.html">Фотографии</a>
+                    </li>
+                    <li class="site-list__item site-list__item--active">
+                        <a href="form.html">Конкурс</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">HTML Academy</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <div class="form__wrapper">
+            <h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
+            <div class="form__blocks">
+                <form class="form" method="post" action="https://echo.htmlacademy.ru">
+                    <div class="form__personal-info">
+                        <p class="form__input-item">
+                            <label for="form__user-lastname">Фамилия:</label>
+                            <input id="form__user-lastname" type="text" name="lastname" value="" placeholder="Укажите фамилию*">
+                        </p>
+                        <p class="form__input-item">
+                            <label for="form__user-firstname">Имя:</label>
+                            <input id="form__user-firstname" type="text" name="firstname" value="" placeholder="Введите ваше имя*">
+                        </p>
+                        <p class="form__input-item">
+                            <label for="form__user-fathername">Отчество</label>
+                            <input id="form__user-fathername" type="text" name="fathername" value="" placeholder="Ну и отчество тоже*">
+                        </p>
+                    </div>
+                    <fieldset class="form form__filter">
+                        <legend>С каким приложением путешествовали?</legend>
+                        <ul>
+                            <li class="form__filter-item">
+                                <input class="visually-hidden form__filter-input" type="radio" name="app-type" value="IOS" id="form__IOS" checked>
+                                <label for="form__IOS">Pink для IOS</label>
+                            </li>
+                            <li class="form__filter-item">
+                                <input class="visually-hidden form__filter-input" type="radio" name="app-type" value="Android" id="form__Android">
+                                <label for="form__Android">Pink на Android</label>
+                            </li>
+                            <li class="form__filter-item">
+                                <input class="visually-hidden form__filter-input" type="radio" name="app-type" value="Wondows Phone" id="form__Windows-Phone">
+                                <label for="form__Windows-Phone">Windows Phone</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit" class="form__button">Отправить форму</button>
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+
+            <div>
+                <a class="page-footer__logo">
+                    <img class="page-footer__logo-image" src="img/logotype-blue-desktop.svg" width="147" height="40" alt="Приложение «PINK»">
+                </a>
+            </div>
+
+            <div class="page-footer__social social">
+                <b class="visually-hidden">Давайте дружить!</b>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттер</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютьюб</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+                <b class="copyright__text">Разработано:</b>
+                <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
